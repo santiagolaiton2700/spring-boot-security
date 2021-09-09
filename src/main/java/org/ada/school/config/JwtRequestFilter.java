@@ -28,9 +28,7 @@ import static org.ada.school.utils.Constants.CLAIMS_ROLES_KEY;
 import static org.ada.school.utils.Constants.COOKIE_NAME;
 
 @Component
-public class JwtRequestFilter
-        extends OncePerRequestFilter
-{
+public class JwtRequestFilter extends OncePerRequestFilter {
     @Value( "${app.secret}" )
     String secret;
 
